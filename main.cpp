@@ -1,6 +1,6 @@
-#include <iostream>
+#include "hello.h"
 
 int main() {
-  std::cout << "Hello CMake!\n";
+  hello("CMake");
 }
 
