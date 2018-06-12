@@ -1,2 +1,4 @@
 _build/
 _msvc_build/
+.idea/
+cmake-build-debug/
