@@ -11,3 +11,4 @@ add_executable(prog main.cpp ${PROJECT_SOURCES})
 
 # The tests
 add_executable(tests testmain.cpp ${PROJECT_SOURCES})
+target_include_directories(tests PRIVATE thirdparty/catch/include)
