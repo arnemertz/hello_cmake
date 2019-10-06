@@ -2,7 +2,7 @@
 
 #include <sstream>
 #include <iostream>
-#include "hello.h"
+#include "FP/hello.h"
 
 TEST_CASE( "hello() says hello" ) {
     std::ostringstream out;
