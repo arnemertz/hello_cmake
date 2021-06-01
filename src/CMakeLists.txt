@@ -1,8 +1,14 @@
-project(Hello_prog)
+ project(Hello_prog)
 
 # All sources that also need to be tested in unit tests go into a static library
 add_library(hello_lib STATIC hello.cpp hello.h)
 target_include_directories(hello_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+
+# Library for boundedQueue
+add_library(queue_lib STATIC boundedQueue.cpp boundedQueue.hpp)
+target_include_directories(queue_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
 
 # The main program
 add_executable(prog main.cpp)
